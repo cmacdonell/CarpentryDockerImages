@@ -43,7 +43,7 @@ RUN apt-get update \
     python-isodate \
     python-git \
     python-pip \
-    python-pip3 \
+    python3-pip \
     && apt-get clean
 
 RUN pip install --upgrade pyzmq PyDrive google-api-python-client jsonpointer jsonschema tornado sphinx pygments nose readline mistune invoke
