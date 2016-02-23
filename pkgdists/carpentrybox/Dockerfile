@@ -2,7 +2,7 @@
 # Tag: cmacdonell/carpentrybox
 # Version:v0.3.12
 
-FROM cmacdonell/carpentryboxminpkgdist:v0.3.12
+FROM cmacdonell/carpentryboxminpkgdist:latest
 
 MAINTAINER Tanmay Mohapatra
 
