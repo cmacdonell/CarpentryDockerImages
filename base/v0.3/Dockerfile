@@ -63,4 +63,6 @@ RUN echo "PATH=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/u
 
 RUN /opt/julia/bin/julia -e 'Pkg.add("IJulia")'
 
+EXPOSE 8888
+
 ENTRYPOINT /bin/bash
