@@ -1,8 +1,8 @@
 # Docker file for JuliaBox Minimal
-# Tag: julialang/juliaboxminpkgdist
+# Tag: cmacdonell/carpentryboxminpkgdist
 # Version:v0.3.12
 
-FROM julialang/julia:v0.3.12
+FROM cmacdonell/carpentry:v0.3.12
 
 MAINTAINER Tanmay Mohapatra
 

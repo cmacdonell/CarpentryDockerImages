@@ -30,6 +30,7 @@ RUN apt-get update \
     libzmq3-dev \
     libzmq3 \
     python \
+    python3 \
     python-yaml \
     python-m2crypto \
     python-crypto \
@@ -42,11 +43,12 @@ RUN apt-get update \
     python-isodate \
     python-git \
     python-pip \
+    python-pip3 \
     && apt-get clean
 
 RUN pip install --upgrade pyzmq PyDrive google-api-python-client jsonpointer jsonschema tornado sphinx pygments nose readline mistune invoke
 
-RUN git clone --recursive --branch 3.x https://github.com/ipython/ipython.git; cd ipython; python setup.py install; cd ..; rm -rf ipython
+RUN git clone --recursive --branch 3.x https://github.com/ipython/ipython.git; cd ipython; python3 setup.py install; cd ..; rm -rf ipython
 
 RUN mkdir -p /opt/julia_0.3.12 && \
     curl -s -L https://julialang.s3.amazonaws.com/bin/linux/x64/0.3/julia-0.3.12-linux-x86_64.tar.gz | tar -C /opt/julia_0.3.12 -x -z --strip-components=1 -f -
